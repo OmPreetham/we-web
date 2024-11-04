@@ -123,7 +123,7 @@ export function Page() {
         <nav className="max-w-6xl mx-auto">
           <div className="flex items-center justify-between">
             {/* Logo Pipes */}
-            <div className="text-foreground/90 flex items-end space-x-1 cursor-pointer hover:text-foreground hover:scale-150 transition-transform duration-300 hover:rotate-90">
+            <div className="hidden md:flex text-foreground/90 flex items-end space-x-1 cursor-pointer hover:text-foreground hover:scale-150 transition-transform duration-300 hover:rotate-90">
               <div className="w-1 h-5 bg-foreground/90"></div>
               <div className="w-1 h-5 bg-foreground/90"></div>
               <div className="w-1 h-5 bg-foreground/90"></div>
@@ -133,15 +133,15 @@ export function Page() {
       </header>
 
       {/* Hero Section */}
-      <main className="relative min-h-screen flex items-center justify-center px-4 animate-fadeIn">
-        <div className="max-w-6xl mx-auto w-full pt-24 z-10">
+      <main className="relative min-h-screen flex md:items-center justify-center px-4 animate-fadeIn">
+        <div className="max-w-6xl mx-auto w-full pt-4 z-10">
           <div className="max-w-4xl">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-foreground/90 font-light leading-tight mb-6">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl text-foreground/90 leading-tight mb-6">
               <span className="block font-bold flip-text">Private</span>
               <span className="block font-bold flip-text">Safe</span>
               <span className="block font-bold flip-text">Anonymous</span>
             </h1>
-            <p className={`${merriweather.variable} font-serif text-2xl md:text-3xl lg:text-4xl text-foreground/80 font-light leading-relaxed mb-12 animate-fadeIn`}>
+            <p className={`${merriweather.variable} font-serif text-xl md:text-3xl lg:text-4xl text-foreground/80 font-light leading-relaxed mb-12 animate-fadeIn`}>
               Where your <span className='underline'>thoughts</span> matter, not your <span className='underline'>name</span>
             </p>
             
@@ -165,11 +165,11 @@ export function Page() {
         </div>
 
         {/* Large Pipes */}
-        <div className="absolute top-0 md:bottom-0 right-0 flex items-end justify-end p-6 md:p-0" aria-hidden="true">
+        <div className="absolute top-0 md:bottom-0 right-0 flex items-end justify-end p-6 md:p-0 z-50" aria-hidden="true">
           <div className="flex space-x-4 md:space-x-8 lg:space-x-12">
-            <div className="w-8 h-32 md:w-12 md:h-48 lg:w-14 lg:h-54 bg-foreground/10"></div>
-            <div className="w-8 h-32 md:w-12 md:h-48 lg:w-14 lg:h-54 bg-foreground/10"></div>
-            <div className="w-8 h-32 md:w-12 md:h-48 lg:w-14 lg:h-54 bg-foreground/10"></div>
+            <div className="w-8 h-32 md:w-12 md:h-48 lg:w-14 lg:h-54 bg-foreground/10 hover:bg-foreground"></div>
+            <div className="w-8 h-32 md:w-12 md:h-48 lg:w-14 lg:h-54 bg-foreground/10 hover:bg-foreground"></div>
+            <div className="w-8 h-32 md:w-12 md:h-48 lg:w-14 lg:h-54 bg-foreground/10 hover:bg-foreground"></div>
           </div>
         </div>
 
@@ -187,7 +187,7 @@ export function Page() {
 
           {/* By Team We Badge */}
           <div className="flex items-center gap-2 text-foreground/70 text-sm order-2 lg:order-3">
-            <span>By Team We</span>
+            <span>Team We</span>
           </div>
         </div>
       </main>

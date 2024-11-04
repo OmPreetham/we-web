@@ -30,11 +30,11 @@ export function LoadingScreenComponent() {
   return (
     <div className="min-h-screen w-full flex flex-col justify-between bg-background overflow-hidden">
       <div className="flex-grow flex items-center justify-center">
-        <div className="flex gap-4 animate-zoom-rotate-move">
+        <div className="flex gap-2 lg:gap-4 animate-zoom-rotate-move">
           {[...Array(3)].map((_, i) => (
             <div
               key={i}
-              className="w-6 h-24 bg-foreground"
+              className="w-2 h-10 lg:w-4 lg:h-20 bg-foreground"
             />
           ))}
         </div>
