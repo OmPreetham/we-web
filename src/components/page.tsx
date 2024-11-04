@@ -106,7 +106,7 @@ export function Page() {
     textElements.forEach(element => {
       const text = element.textContent || '';
       element.textContent = '';
-      text.split('').forEach((char, index) => {
+      text.split('').forEach((char) => {
         const span = document.createElement('span');
         span.textContent = char;
         span.style.animationDelay = `${Math.random() * 2}s`;
