@@ -174,7 +174,7 @@ export function Page() {
         </div>
 
         {/* Footer Section */}
-        <div className="absolute bottom-6 left-0 right-0 flex flex-col lg:flex-row items-center justify-between px-6 space-y-4 lg:space-y-0">
+        <div className="absolute bottom-6 left-0 right-0 flex flex-col lg:flex-row items-center justify-between px-6 space-y-4 lg:space-y-0 z-10">
           {/* Decorative URL */}
           <div className="text-foreground/50 text-sm order-1 lg:order-1">
             we.build.the.world
