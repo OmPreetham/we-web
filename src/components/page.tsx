@@ -54,15 +54,17 @@ function AboutDrawer({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (open:
 function JoinCommunityDialog({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (open: boolean) => void }) {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="p-0">
+      <DialogContent className="p-0 transition-all duration-300 ease-in-out">
         <DialogTitle className='text-foreground/90 font-mono hidden'>Join Our Community</DialogTitle>
-        <Image
-          src="/qr-test.png"
-          alt="QR Code"
-          width={300}
-          height={300}
-          className="w-full h-full"
-        />
+        <div className={`transition-all duration-300 ease-in-out ${isOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
+          <Image
+            src="/qr-test.png"
+            alt="QR Code"
+            width={300}
+            height={300}
+            className="w-full h-full"
+          />
+        </div>
       </DialogContent>
     </Dialog>
   )
