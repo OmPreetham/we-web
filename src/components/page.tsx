@@ -58,7 +58,7 @@ function JoinCommunityDialog({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen
         <DialogTitle className='text-foreground/90 font-mono hidden'>Join Our Community</DialogTitle>
         <div className={`transition-all duration-300 ease-in-out ${isOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
           <Image
-            src="/qr-test.png"
+            src="/qr-test.webp"
             alt="QR Code"
             width={300}
             height={300}
